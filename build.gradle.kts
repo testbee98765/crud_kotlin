@@ -83,9 +83,9 @@ tasks.withType<KotlinCompile> {
 }
 
 flyway {
-    url = "jdbc:postgresql://localhost:5432/test_database"
-    user = "test_user"
-    password = "qwerty"
+    url = "jdbc:postgresql://localhost:5433/demo_database"
+    user = "username"
+    password = "password"
     baselineOnMigrate = true
     locations = arrayOf("filesystem:src/main/resources/db/migration")
 }
